@@ -12,6 +12,6 @@ public class TestCountingSheeps {
 
     private int countSheeps(Boolean[] sheeps) {
         SheepCounter counter = new SheepCounter();
-        return 0;
+        return counter.countSheeps();
     }
 }
