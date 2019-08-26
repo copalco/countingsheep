@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TestCountingSheeps {
     @Test
-    public void countsSheeps() {
+    public void noSheeps() {
         Boolean[] sheeps = {};
         assertEquals(countSheeps(sheeps), 0);
     }
