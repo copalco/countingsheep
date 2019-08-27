@@ -8,7 +8,6 @@ public class SheepCounter {
         if (arrayOfSheep == null) {
             return 0;
         }
-        Stream<Boolean> sheepStream = Arrays.stream(arrayOfSheep);
-        return (int) sheepStream.filter(sheep -> sheep != null && sheep).count();
+        return (int) Arrays.stream(arrayOfSheep).filter(sheep -> sheep != null && sheep).count();
     }
 }
