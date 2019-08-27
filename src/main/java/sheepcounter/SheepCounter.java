@@ -10,7 +10,7 @@ public class SheepCounter {
         }
         int sheepCounter = 0;
         Stream<Boolean> sheepStream = Arrays.stream(arrayOfSheep);
-        sheepStream.filter(sheep -> sheep != null && sheep);
+        sheepStream.filter(sheep -> sheep != null && sheep).count();
         for (Boolean sheep : arrayOfSheep) {
             if (sheep != null && sheep) {
                 sheepCounter += 1;
