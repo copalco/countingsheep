@@ -10,6 +10,12 @@ public class TestCountingSheeps {
         assertEquals(countSheeps(sheep), 0);
     }
 
+    @Test
+    public void countTrueAsSheep() {
+        Boolean[] sheep = {true, true, true};
+        assertEquals(countSheeps(sheep), 3);
+    }
+
     private int countSheeps(Boolean[] sheep) {
         SheepCounter counter = new SheepCounter();
         return counter.countSheeps(sheep);
