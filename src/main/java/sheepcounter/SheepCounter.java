@@ -15,7 +15,7 @@ public class SheepCounter {
                 sheepCounter += 1;
             }
         }
-        sheepStream.filter(sheep -> sheep != null && sheep).count();
+        sheepCounter = (int) sheepStream.filter(sheep -> sheep != null && sheep).count();
         return sheepCounter;
     }
 }
