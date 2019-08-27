@@ -6,14 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class TestCountingSheeps {
     @Test
     public void noSheeps() {
-        Boolean[] sheep = {};
-        assertEquals(countSheeps(sheep), 0);
+        assertEquals(countSheeps(new Boolean[]{}), 0);
     }
 
     @Test
     public void countTrueAsSheep() {
-        Boolean[] sheep = {true, true, true};
-        assertEquals(countSheeps(sheep), 3);
+        assertEquals(countSheeps(new Boolean[]{true, true, true}), 3);
     }
 
     private int countSheeps(Boolean[] sheep) {
