@@ -19,7 +19,7 @@ public class TestCountingSheeps {
 
     @Test
     public void doesNotCountFalse() {
-        assertEquals(counter.countSheeps(new Boolean[]{false, false, false}), 0);
+        assertEquals(counter.countSheeps(new Boolean[]{false, true, false}), 1);
     }
 
     @Test
