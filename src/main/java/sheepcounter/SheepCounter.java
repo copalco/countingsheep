@@ -1,7 +1,6 @@
 package sheepcounter;
 
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class SheepCounter {
     public int countSheeps(Boolean[] arrayOfSheep) {
