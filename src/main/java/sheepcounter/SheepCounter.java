@@ -5,8 +5,10 @@ public class SheepCounter {
         int sheepCounter = 0;
         if (arrayOfSheep != null) {
             for (Boolean sheep : arrayOfSheep) {
-                if (sheep == true) {
-                    sheepCounter += 1;
+                if (sheep != null) {
+                    if (sheep == true) {
+                        sheepCounter += 1;
+                    }
                 }
             }
         }
