@@ -2,6 +2,7 @@ package sheepcounter;
 
 public class SheepCounter {
     public int countSheeps(Boolean[] arrayOfSheep) {
-        return 0;
+        int sheepCounter = 0;
+        return sheepCounter;
     }
 }
