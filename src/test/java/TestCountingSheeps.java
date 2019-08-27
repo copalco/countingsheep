@@ -20,7 +20,7 @@ public class TestCountingSheeps {
     }
 
     @Test
-    public void countsNullAsZero() {
+    public void countsNullArrayAsZero() {
         assertEquals(countSheeps(null), 0);
     }
 
